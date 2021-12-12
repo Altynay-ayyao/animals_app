@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+/*****************************************Header part**********************************************************************/
+
+header,
+footer {
+  height: 5rem;
+  width: 100vw;
+  background-color: #c56824;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+}
+header {
+  justify-content: space-between;
+}
+header h1 {
+  margin-left: 10px;
+}
+
+header a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover {
+  background-color: white;
+  color: #0a0b0b;
+  border-radius: 10px;
+}
+footer {
+  justify-content: center;
+}
+
+input {
+  position: absolute;
+  right: 33.333333333333333333333%;
+  top: 22px;
+  width: 30%;
+  padding: 10px;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  color: #dfe0df;
+  outline: navajowhite;
+  background-color: oldlace;
+}
+input:focus {
+  color: #0a0b0b;
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 15px;
+}
+nav li {
+  display: block;
+  padding-left: 10px;
+  transition: ease-in;
+  transition-duration: 0.1s;
+}
+
+li:hover {
+  scale: 1.1;
+}
+.home,
+.about {
+  width: 100vw;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******************************************main**********************************************/
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/*************************AnimalsCard.js**************************************/
+.animal_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-grow: 5;
+  margin: 15px;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: #0a0b0b;
+}
+.animal_card:hover {
+  scale: 1.03;
+  box-shadow: 0 3px 10px rgba(43, 18, 8, 0.2);
+  background-color: #b5cda3;
+  cursor: pointer;
+}
+.animal_card img {
+  height: 150px;
+  margin: 15px;
+}
+.animal_tag {
+  font-size: 18px;
+  font-weight: bold;
+  color: #a09f57;
+  margin-bottom: 1rem;
+}
+
+.animal_card_link {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #cfb784;
+}
+
+/*****************************AnimalsSingle.js********************************/
+
+.animal_single_wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animal_single {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  text-align: center;
+  position: relative;
+}
+.animal_single img {
+  max-height: 74vh;
+  max-width: 92vw;
+}
+.animal_single p {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+.animal_single button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1rem;
+  height: 1rem;
+  color: black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
